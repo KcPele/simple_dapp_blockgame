@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockgame web3</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <!-- <script src="web2.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <h2>BlockGames Assignments</h2>
+    </header>
+
+    <main class="container">
+      <h4>Welcome to Fide Token</h4>
+      <p class="contract">
+        Copy this contract address and import it
+        <strong>0x5DF906D043346bE3915DA2fC1Ff13B1E1092FAed</strong> and import
+        custom token your wallet
+      </p>
+      <div class="address">
+        <p class="show--address"></p>
+        <input id="wallet--address" type="text" placeholder="wallet address" />
+        <button id="user--btn">Save</button>
+      </div>
+
+      <div id="token--stacked"></div>
+      <div class="stack--token">
+        <p>You can stake your token here</p>
+        <input
+          id="stack--amount"
+          type="number"
+          placeholder="amount of token to stack"
+        />
+        <button type="submit" class="stack--btn">Stake</button>
+      </div>
+      <div class="view-bal">
+        <div class="view--token"></div>
+        <p>View your token balance</p>
+        <p class="view"></p>
+        <button class="balance">Token Balance</button>
+      </div>
+      <div class="transfer--token">
+        <p>Wish to transfer your tokens</p>
+        <input
+          id="transfer--amount"
+          type="number"
+          placeholder="amount to transfer"
+        />
+        <input
+          id="transfer--address"
+          type="number"
+          placeholder="The transfer address"
+        />
+        <button type="submit" class="transfer">Transfer</button>
+      </div>
+    </main>
+    <footer>https://blockgames.zuriboard.com</footer>
+  </body>
+</html>

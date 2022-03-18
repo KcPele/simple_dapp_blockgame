@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  color: aliceblue;
+  font-family: "Montserrat";
+}
+header {
+  color: whitesmoke;
+  background-color: darkolivegreen;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  width: 80%;
+  max-width: 540px;
+  margin: 0 auto;
+
+  margin-top: 0.4rem;
+  border-radius: 8px;
+  background-color: rgb(74, 150, 133);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h4 {
+  background-color: darkolivegreen;
+  padding: 0.9rem;
+  overflow: hidden;
+}
+strong {
+  color: rgb(148, 15, 21);
+  /* background-color: gray; */
+}
+.contract {
+  width: 23rem;
+  text-align: left;
+  margin: 0 auto;
+}
+input {
+  width: 23rem;
+  display: block;
+  margin: 4px auto;
+  height: 1.9rem;
+  border-radius: 8px;
+  border: none;
+  text-indent: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input:hover {
+  border: 2px solid lightgreen;
+}
+
+button {
+  width: 5rem;
+  height: 1.9rem;
+  border-radius: 8px;
+  border: none;
+  background-color: darkolivegreen;
+  color: white;
+  margin-bottom: 1.4rem;
+  cursor: pointer;
+  text-indent: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input:focus {
+  outline: none;
+}
+button:hover {
+  text-align: left;
+  color: rgb(219, 218, 217);
+}
+footer {
+  color: rgb(199, 206, 109);
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  background-color: darkolivegreen;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  input,
+  .contract {
+    width: 14.5rem;
+  }
+  .container {
+    margin-bottom: 6rem;
+  }
+}
